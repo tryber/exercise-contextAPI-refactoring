@@ -1,13 +1,18 @@
-// src/Cars.jsx
+import React, { Component } from 'react';
+import { carBlue, carRed, carYellow } from './images';
+import contextLeftCars from './contextLeftCar';
+import Car from './Car';
 
-import PropTypes from 'prop-types';
-import React from 'react';
-import { connect } from 'react-redux';
-import carBlue from './images/carBlue.jpeg';
-import carRed from './images/carRed.jpeg';
-import carYellow from './images/carYellow.jpeg';
-import { moveCar } from './redux/actionCreators';
+export default class Cars extends Component {
+  constructor() {
+    super();
+    this.state={
+      cars: { red: false, blue: false, yellow: false },
+    }
+    this.switchCar = this.switchCar.bind(this);
+  }
 
+<<<<<<< HEAD
 function Cars({ redCar, blueCar, yellowCar, moveCar }) {
   return (
     <div>
@@ -69,3 +74,25 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = { moveCar };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cars);
+=======
+  switchCar({ target: { id }}) {
+    this.setState(({ cars }) => {
+      return ({ cars: { [id]: !cars[id] }, })
+    })
+  }
+
+  render() {
+    const LeftCars = {
+      switchCar: this.switchCar,
+      cars: this.state.cars,
+    }
+    return (
+      <contextLeftCars.Provider value={ LeftCars } >
+        <Car alt="red car" img={ carRed } />
+        <Car alt="blue car" img={ carBlue } />
+        <Car alt="yellow car" img={ carYellow } />
+      </contextLeftCars.Provider>
+    );
+  }
+}
+>>>>>>> exercise-one
