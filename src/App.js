@@ -1,7 +1,6 @@
 import React from 'react';
-import TrafficSignal from './TrafficSignal';
 import './App.css';
-import Cars from './Cars';
+import { Cars, TrafficSignal } from './elements';
 
 function App() {
   return (

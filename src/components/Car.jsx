@@ -1,5 +1,5 @@
 import React from 'react';
-import contextLeftCars from './contextLeftCar';
+import { contextLeftCars } from '../contexts';
 
 export default function car({ alt, img }) {
   const id = alt.replace(' car', '');
