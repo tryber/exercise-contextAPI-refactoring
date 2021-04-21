@@ -53,15 +53,5 @@ class TrafficSignal extends React.Component {
     );
   }
 }
-// const mapStateToProps = (state) => ({
-//   signalColor: state.trafficReducer.signal.color
-// });
-
-// const mapDispatchToProps = { changeSignal };
-
-// TrafficSignal.propTypes = {
-//   changeSignal: PropTypes.func.isRequired,
-//   signalColor: PropTypes.string.isRequired,
-// };
 
 export default TrafficSignal;

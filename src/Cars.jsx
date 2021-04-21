@@ -68,19 +68,4 @@ class Cars extends React.Component {
   }
 }
 
-// Cars.propTypes = {
-//   moveCar: PropTypes.func.isRequired,
-//   blueCar: PropTypes.bool.isRequired,
-//   redCar: PropTypes.bool.isRequired,
-//   yellowCar: PropTypes.bool.isRequired,
-// };
-
-// const mapStateToProps = (state) => ({
-//   redCar: state.carReducer.cars.red,
-//   blueCar: state.carReducer.cars.blue,
-//   yellowCar: state.carReducer.cars.yellow,
-// });
-
-// const mapDispatchToProps = { moveCar };
-
 export default Cars;
