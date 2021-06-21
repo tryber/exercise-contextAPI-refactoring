@@ -27,15 +27,17 @@ class App extends React.Component {
   }
 
   handleCars(carColor, newStateCar) {
-    this.setState((prevState) => (
-      { cars: { ...prevState.cars, [carColor]: newStateCar }})
-    );
+    // this.setState((prevState) => (
+    //   { cars: { ...prevState.cars, [carColor]: newStateCar }})
+    // );
+    this.setState({ cars: { [carColor]: newStateCar } });
   }
 
   handleTrafficSignal(color) {
-    this.setState((prevState) => (
-      { signal: { ...prevState.signal, color: color }})
-    );
+    // this.setState((prevState) => (
+    //   { signal: { ...prevState.signal, color: color }})
+    // );
+    this.setState({ signal: { color: color } });
   }
 
   signalImage() {
