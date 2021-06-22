@@ -71,3 +71,9 @@ _Nesse exercício toda a estrutura de Redux já está pronta, você precisará r
 Refatore o exercício sobre o Reddit que está na branch `exercise-three` deste repositório. Mofique a aplicação para utilizar Context API para gerenciar o estado no lugar de Redux.
 
 ---
+
+#### Exercício 3 
+
+Refatore o exercício sobre o Reddit que está na branch `exercise-three` do repositório [exercise-contextAPI-refactoring](https://github.com/tryber/exercise-contextAPI-refactoring/tree/master). Mofique a aplicação para utilizar Context API para gerenciar o estado no lugar de Redux.
+
+---
